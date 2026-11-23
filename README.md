@@ -1,32 +1,24 @@
 ## Research question
 
-When satellite-based Human Development Index (HDI) estimates are used to target
-aid to Indonesia's poorest districts, how often are poor districts inside
-better-off provinces missed compared with poor districts inside poor provinces,
-what do the missed districts have in common, and can group-specific thresholds
-reduce the gap?
+When satellite-based HDI estimates are used to target aid to Indonesia’s poorest districts, how often are poor districts inside better-off provinces missed compared with poor districts inside poor provinces? Can group-specific thresholds reduce the gap?
 
 ## How this differs from the original paper
 
-Sherman et al. (2026, *Nature Communications*) estimate HDI for ~61,500
-districts worldwide from satellite imagery. Their Indonesia validation asks
-**how closely the estimates match official values** (R² of 0.61 within the
-country and 0.53 within provinces).
+Sherman et al. (2026, *Nature Communications*) estimate HDI for districts worldwide from satellite imagery. Their Indonesia validation asks
+how closely the estimates match official values, and they have an R² of 0.61 within the
+country and 0.53 within provinces.
 
-We ask a different question: **if a government acts on these estimates, which
+What we want to ask is if a government acts on these estimates, which
 truly poor districts are left out, and are the misses concentrated in a
-particular kind of place?** Correlation describes average fit across all
-districts. It cannot show whether errors fall on the same group again and
-again. A confusion matrix split by group can.
+particular kind of place?
 
 ## Approach
 
 1. **Replicate** the paper's Indonesia numbers from public data.
 2. **Simulate targeting.** "Needy" = bottom 20% of districts by official HDI.
-   "Flagged" = bottom 20% by a method's score. Compare two scores:
+   "Flagged" = bottom 20% by a our method's score. Compare two scores:
    - the satellite estimate for each district, and
-   - the province average (every district gets its province's HDI), as a
-     stand-in for targeting with coarse data.
+   - the province average
 3. **Locate the misses** by splitting provinces into thirds by HDI.
 4. *(Next)* **ROC curves per group**: keep "needy" fixed and vary the cutoff
    on the score (equivalently, the size of the aid budget). Then test
@@ -81,12 +73,9 @@ exp_runner.py                 runs all experiments
 
 ## Preliminary results
 
-**1. Replication.** The public data reproduces the paper's Indonesia numbers:
-R² of 0.61 within the country and 0.53 within provinces. The satellite
-estimates are about two-thirds as spread out as the official values
-(standard deviation 0.046 vs 0.069).
+**1. Replication.** The public data reproduces the paper's Indonesia numbers.
 
-**2. Targeting, 2×2 tables** (103 needy of 513 districts):
+**2. Targeting 2×2 tables** :
 
 | | Satellite | Province average |
 |---|---|---|
@@ -96,11 +85,7 @@ estimates are about two-thirds as spread out as the official values
 | TPR | 0.60 | 0.55 |
 | FPR | 0.10 | 0.11 |
 
-Because the number flagged equals the number needy, FN = FP and
-FPR = (1 − TPR) × 103/410. One fixed cutoff gives one ROC point, so the next
-step is to vary the cutoff.
-
-**3. Where the misses are.** Needy districts caught, by province third:
+**3. misses** :
 
 | Province third | Needy | Satellite | Province average |
 |---|---|---|---|
@@ -113,13 +98,6 @@ better-off provinces. The satellite catches 8. Many satellite misses are
 island districts (e.g. Pulau Morotai, Pulau Taliabu, Kepulauan Mentawai,
 Nias Selatan, Simeulue).
 
-### Caveats
-- Counts districts, not people. Population weighting is a planned check.
-- Only 31 needy districts lie outside the poor provinces, so those rates are
-  uncertain. A bootstrap is planned.
-- Province-average ties are broken by satellite score. Random tie-breaking
-  gives the same expected TPR (0.55).
-- Official HDI is the average of male and female HDI, not BPS's total HDI.
 
 ## Reference
 
