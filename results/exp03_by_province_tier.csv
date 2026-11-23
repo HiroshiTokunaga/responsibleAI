@@ -1,0 +1,7 @@
+province_tier,method,n,TP,FP,FN,TN,TPR,FPR,PPV
+poor,province average,169,57,46,15,51,0.792,0.474,0.553
+poor,satellite,169,54,20,18,77,0.75,0.206,0.73
+middle,province average,198,0,0,20,178,0.0,0.0,
+middle,satellite,198,5,14,15,164,0.25,0.079,0.263
+better-off,province average,146,0,0,11,135,0.0,0.0,
+better-off,satellite,146,3,7,8,128,0.273,0.052,0.3

@@ -1,0 +1,42 @@
+name,bps_province,prov_tier,hdi_true,hdi_sat,hdi_province
+Pulau Morotai,MALUKU UTARA,poor,0.578,0.691,0.702
+Pulau Taliabu,MALUKU UTARA,poor,0.611,0.68,0.702
+Buton Selatan,SULAWESI TENGGARA,middle,0.613,0.682,0.708
+Maluku Tenggara Barat,MALUKU,poor,0.616,0.72,0.702
+Raja Ampat,PAPUA BARAT,poor,0.621,0.705,0.659
+Maluku Barat Daya,MALUKU,poor,0.621,0.672,0.702
+Sampang,JAWA TIMUR,middle,0.623,0.711,0.715
+Mesuji,LAMPUNG,middle,0.625,0.674,0.706
+Kepulauan Mentawai,SUMATERA BARAT,better-off,0.628,0.689,0.74
+Buton Tengah,SULAWESI TENGGARA,middle,0.629,0.687,0.708
+Belu,NUSA TENGGARA TIMUR,poor,0.63,0.681,0.66
+Bolaang Mongondow Selatan,SULAWESI UTARA,better-off,0.632,0.699,0.728
+Seram Bagian Timur,MALUKU,poor,0.633,0.712,0.702
+Nias Selatan,SUMATERA UTARA,better-off,0.633,0.676,0.723
+Simeulue,ACEH,better-off,0.635,0.691,0.721
+Melawi,KALIMANTAN BARAT,poor,0.641,0.673,0.69
+Cianjur,JAWA BARAT,middle,0.644,0.689,0.719
+Polewali Mandar,SULAWESI BARAT,middle,0.645,0.701,0.71
+Bangkalan,JAWA TIMUR,middle,0.646,0.712,0.715
+Garut,JAWA BARAT,middle,0.646,0.711,0.719
+Halmahera Selatan,MALUKU UTARA,poor,0.646,0.707,0.702
+Lombok Utara,NUSA TENGGARA BARAT,poor,0.646,0.692,0.702
+Bombana,SULAWESI TENGGARA,middle,0.649,0.683,0.708
+Kota Subulussalam,ACEH,better-off,0.649,0.713,0.721
+Kepulauan Sula,MALUKU UTARA,poor,0.649,0.698,0.702
+Penukal Abab Lematang Ilir,SUMATERA SELATAN,middle,0.651,0.716,0.709
+Konawe Kepulauan,SULAWESI TENGGARA,middle,0.651,0.692,0.708
+Seram Bagian Barat,MALUKU,poor,0.652,0.683,0.702
+Sumenep,JAWA TIMUR,middle,0.654,0.701,0.715
+Pandeglang,BANTEN,middle,0.654,0.683,0.717
+Tasikmalaya,JAWA BARAT,middle,0.655,0.684,0.719
+Bangka Selatan,KEP. BANGKA BELITUNG,poor,0.655,0.677,0.702
+Parigi Moutong,SULAWESI TENGAH,poor,0.655,0.685,0.697
+Sikka,NUSA TENGGARA TIMUR,poor,0.655,0.681,0.66
+Donggala,SULAWESI TENGAH,poor,0.655,0.687,0.697
+Jeneponto,SULAWESI SELATAN,middle,0.656,0.722,0.71
+Tana Tidung,KALIMANTAN UTARA,better-off,0.656,0.689,0.738
+Nunukan,KALIMANTAN UTARA,better-off,0.656,0.731,0.738
+Indragiri Hilir,RIAU,better-off,0.656,0.694,0.728
+Halmahera Timur,MALUKU UTARA,poor,0.657,0.688,0.702
+Tojo Una-Una,SULAWESI TENGAH,poor,0.658,0.713,0.697
