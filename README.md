@@ -1,7 +1,3 @@
-# Who Gets Missed? Auditing Satellite-Based HDI Estimates for Aid Targeting in Indonesia
-
-CSCI 382 Responsible AI/ML, Fall 2026, Williams College.
-
 ## Research question
 
 When satellite-based Human Development Index (HDI) estimates are used to target
