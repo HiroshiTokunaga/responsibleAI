@@ -87,16 +87,14 @@ exp_runner.py                 runs all experiments
 
 **3. misses** :
 
-| Province third | Needy | Satellite | Province average |
+| Province tiers | Needy | Satellite | Province average |
 |---|---|---|---|
 | Poor (10 provinces) | 72 | 54 | 57 |
 | Middle (10) | 20 | 5 | 0 |
 | Better-off (9) | 11 | 3 | 0 |
 
 The province average catches none of the 31 needy districts in middle or
-better-off provinces. The satellite catches 8. Many satellite misses are
-island districts (e.g. Pulau Morotai, Pulau Taliabu, Kepulauan Mentawai,
-Nias Selatan, Simeulue).
+better-off provinces. The satellite catches 8. 
 
 
 ## Reference
